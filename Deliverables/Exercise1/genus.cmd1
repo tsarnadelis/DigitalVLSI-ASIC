@@ -1,0 +1,21 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.15-s080_1, built Sep 23 2022 12:57:55
+
+# Date: Mon Oct 21 17:38:41 2024
+# Host: cn88.it.auth.gr (x86_64 w/Linux 5.14.0-427.28.1.el9_4.x86_64) (1core*12cpus*23physical cpus*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+# OS:   Rocky Linux release 9.4 (Blue Onyx)
+
+source run.tcl
+read_hdl picorv32.v
+elaborate picorv32
+check_design
+read_sdc constraints.sdc
+check_timing_intent
+syn_generic
+syn_map
+syn_opt
+report_gates
+report_area
+report_timing
+report_power
+report_qor
+write_design -innovus picorv32

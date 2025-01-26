@@ -1,0 +1,188 @@
+#Writing out dft_controllable
+proc ::dft_controllable_proc { inst } {
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_addr[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_addr[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_la_addr[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_la_addr[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[31]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[30]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[29]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[28]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[27]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[26]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[25]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[24]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[23]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[22]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[21]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[20]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[19]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[18]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[17]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[16]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[15]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[14]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[13]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[12]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[11]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[10]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[9]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[8]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[7]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[6]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[5]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[4]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[3]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[2]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_valid]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[35]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[34]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[33]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[32]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[31]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[30]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[29]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[28]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[27]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[26]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[25]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[24]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[23]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[22]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[21]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[20]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[19]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[18]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[17]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[16]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[15]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[14]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[13]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[12]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[11]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[10]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[9]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[8]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[7]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[6]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[5]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[4]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[3]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[2]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[0]]
+}
+
+set_dft_functions_from_proc -subdesign picorv32 -function dft_controllable_proc
+
+define_test_bus_port -name se -module picorv32 -active high -function shift_enable -default -index 0 se
+define_test_bus_port -name test_mode -module picorv32 -active high -function test_mode -index 0 test_mode
+define_test_bus_port -name scanclk -module picorv32 -active high -function test_clock -index 0 clk
+ 
+# writing abstract model for 1 scan chain
+ 
+  define_scan_abstract_segment -module picorv32 \
+    -name picorv32_top_chain \
+    -sdi scan_in -sdo scan_out \
+    -shift_enable_port se -active high \
+    -test_mode_port test_mode -test_mode_active high \
+    -clock_port clk -rise \
+    -tail_clock_port clk -tail_edge_rise \
+    -length 1961 
+ 
+#Writing out dft_controllable
+proc ::dft_controllable_proc { inst } {
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_addr[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_addr[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_la_addr[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin mem_la_addr[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[31]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[30]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[29]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[28]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[27]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[26]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[25]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[24]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[23]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[22]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[21]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[20]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[19]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[18]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[17]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[16]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[15]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[14]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[13]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[12]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[11]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[10]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[9]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[8]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[7]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[6]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[5]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[4]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[3]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[2]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin eoi[0]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_valid]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[35]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[34]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[33]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[32]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[31]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[30]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[29]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[28]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[27]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[26]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[25]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[24]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[23]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[22]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[21]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[20]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[19]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[18]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[17]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[16]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[15]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[14]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[13]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[12]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[11]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[10]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[9]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[8]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[7]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[6]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[5]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[4]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[3]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[2]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[1]]
+    define_test_mode -active low [::legacy::find $inst -maxdepth 2 -pin -$::nvs::hpin trace_data[0]]
+}
+
+set_dft_functions_from_proc -subdesign picorv32 -function dft_controllable_proc
+
+define_test_bus_port -name se -module picorv32 -active high -function shift_enable -default -index 0 se
+define_test_bus_port -name test_mode -module picorv32 -active high -function test_mode -index 0 test_mode
+define_test_bus_port -name scanclk -module picorv32 -active high -function test_clock -index 0 clk
+ 
+# writing abstract model for 1 scan chain
+ 
+  define_scan_abstract_segment -module picorv32 \
+    -name picorv32_top_chain \
+    -sdi scan_in -sdo scan_out \
+    -shift_enable_port se -active high \
+    -test_mode_port test_mode -test_mode_active high \
+    -clock_port clk -rise \
+    -tail_clock_port clk -tail_edge_rise \
+    -length 1961 
+ 
