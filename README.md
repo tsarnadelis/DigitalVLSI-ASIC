@@ -4,7 +4,7 @@ Files regarding synthesis and floorplanning of a RISC-V processor, using Cadence
 
 ## picorv32
 
-This project is based on picorv32 Verilog code, which can be found here: [YosysHQ/picorv32](https://github.com/YosysHQ/picorv32). Using the above RISC-V CPU and Cadence Genus and Innovus, sythesizing, flooraplaning, placing, routing and sign-off are possible. 
+This project is based on picorv32 Verilog code, which can be found here: [YosysHQ/picorv32](https://github.com/YosysHQ/picorv32). Using the above RISC-V CPU and Cadence Genus and Innovus, sythesizing, floorplaning, placing, routing and sign-off are possible. 
 
 ## Folder Descriptions
 
